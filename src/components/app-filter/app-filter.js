@@ -2,10 +2,6 @@ import { Component } from "react";
 import "./app-filter.css";
 
 class AppFilter extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   onFilter = (e) => {
     const value = e.target.textContent;
     this.props.onFilterSet(value);
